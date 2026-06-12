@@ -1,4 +1,4 @@
-/* michi normal — Firebase Realtime Database + order pipeline
+/* Michi normale — Firebase Realtime Database + order pipeline
  * Saves every order to RTDB and notifies Telegram (telegram.js).
  * Works even if Firebase is not yet configured (Telegram still fires).
  */

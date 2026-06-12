@@ -1,5 +1,5 @@
 /* =========================================================
-   michi normal — language, theme, nav, carousel, orders
+   Michi normale — language, theme, nav, carousel, orders
    ========================================================= */
 (function(){
   'use strict';
@@ -110,7 +110,7 @@
     o.innerHTML = '<div class="mn-success-card">'+
       '<div class="mn-check">\u2713</div>'+
       '<h3>'+t('\u062a\u0645 \u062a\u0623\u0643\u064a\u062f \u0637\u0644\u0628\u0643','Your order is confirmed')+'</h3>'+
-      '<p>'+t('\u0633\u0646\u062a\u0648\u0627\u0635\u0644 \u0645\u0639\u0643 \u0647\u0627\u062a\u0641\u064a\u064b\u0627 \u0644\u0644\u062a\u0623\u0643\u064a\u062f. \u0634\u0643\u0631\u064b\u0627 \u0644\u062b\u0642\u062a\u0643 \u0628\u0640 michi normal','We\u2019ll call you to confirm. Thank you for trusting michi normal')+'</p>'+
+      '<p>'+t('\u0633\u0646\u062a\u0648\u0627\u0635\u0644 \u0645\u0639\u0643 \u0647\u0627\u062a\u0641\u064a\u064b\u0627 \u0644\u0644\u062a\u0623\u0643\u064a\u062f. \u0634\u0643\u0631\u064b\u0627 \u0644\u062b\u0642\u062a\u0643 \u0628\u0640 Michi normale','We\u2019ll call you to confirm. Thank you for trusting Michi normale')+'</p>'+
       '<div class="mn-ok-box">'+(phone?'<div class="mn-ok-row" dir="ltr"><b>'+phone+'</b></div>':'')+idHtml+totHtml+'</div>'+
       '<a class="btn btn-primary" target="_blank" rel="noopener" href="https://wa.me/'+WHATSAPP+'">'+t('\u062a\u0648\u0627\u0635\u0644 \u0639\u0628\u0631 \u0648\u0627\u062a\u0633\u0627\u0628','Chat on WhatsApp')+'</a>'+
       '<button type="button" class="mn-success-close">'+t('\u0625\u063a\u0644\u0627\u0642','Close')+'</button>'+
@@ -131,7 +131,7 @@
       var qty = parseInt(val('qty'),10)||1;
       if(!name || !phone || !wilaya){ alert(t('\u064a\u0631\u062c\u0649 \u0645\u0644\u0621 \u0627\u0644\u062d\u0642\u0648\u0644 \u0627\u0644\u0645\u0637\u0644\u0648\u0628\u0629','Please fill the required fields')); return; }
       if(!/^0[5-7][0-9]{8}$/.test(phone)){ alert(t('\u0631\u0642\u0645 \u0627\u0644\u0647\u0627\u062a\u0641 \u063a\u064a\u0631 \u0635\u062d\u064a\u062d (\u0645\u062b\u0627\u0644: 0612345678)','Invalid phone number (e.g. 0612345678)')); return; }
-      var pname = form.getAttribute('data-product') || 'michi normal';
+      var pname = form.getAttribute('data-product') || 'Michi normale';
       var price = Number(form.getAttribute('data-price')||0);
       var total = price * qty;
       var orderData = {

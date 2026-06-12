@@ -1,4 +1,4 @@
-/* michi normal — interactive spotlight banner (no canvas, sharp = source) */
+/* Michi normale — interactive spotlight banner (no canvas, sharp = source) */
 (function () {
   var sec = document.querySelector('.michi-fx');
   if (!sec) return;

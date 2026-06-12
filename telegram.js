@@ -1,4 +1,4 @@
-/* michi normal — Telegram order notifications
+/* Michi normale — Telegram order notifications
  * Sends every website order to the store owner's Telegram instantly.
  * Safe by design: wrapped in try/catch and never blocks the order flow.
  */
@@ -45,7 +45,7 @@
         : (order.productName ? ('\ud83d\udce6 <b>\u0627\u0644\u0645\u0646\u062a\u062c:</b> ' + esc(order.productName) + '\n') : '');
 
       var msg =
-        '\ud83d\udecd <b>\u0637\u0644\u0628 \u062c\u062f\u064a\u062f \u2014 michi normal</b>\n' +
+        '\ud83d\udecd <b>\u0637\u0644\u0628 \u062c\u062f\u064a\u062f \u2014 Michi normale</b>\n' +
         '\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n' +
         productLine +
         '\ud83d\udc64 <b>\u0627\u0644\u0627\u0633\u0645:</b> ' + esc(order.customer || order.fullName || '-') + '\n' +
