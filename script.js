@@ -225,6 +225,17 @@
       });
     });
 
+    // Make whole product cards clickable -> fire their primary action
+    document.querySelectorAll('.product').forEach(function(card){
+      var primary = card.querySelector('.btn-primary') || card.querySelector('a[href], button');
+      if(!primary) return;
+      card.style.cursor = 'pointer';
+      card.addEventListener('click', function(e){
+        if(e.target.closest('a, button')) return;
+        primary.click();
+      });
+    });
+
     bindForm(document.querySelector('#orderForm'));
   });
 })();
