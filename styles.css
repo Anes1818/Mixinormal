@@ -170,21 +170,19 @@ section{position:relative}
 .burger{display:none}
 
 /* ---------- Hero ---------- */
-.hero{position:relative;width:100%;text-align:center;overflow:hidden;background:#08070a}
-.hero .wrap{position:absolute;z-index:2;left:50%;top:50%;transform:translate(-50%,-50%);width:min(760px,90%);padding:0 16px}
-.hero .michi-fx{position:relative;z-index:0;width:100%;margin:0;background:#08070a;overflow:hidden}
+.hero{position:relative;display:flex;flex-direction:column;text-align:center;overflow:hidden;background:#08070a}
+.hero .wrap{position:relative;z-index:2;width:100%;max-width:760px;margin:0 auto;padding:44px 20px 56px}
+.hero .michi-fx{position:relative;order:-1;z-index:0;width:100%;margin:0;background:#08070a;overflow:hidden}
 .hero .michi-fx .mfx-stage{position:relative;width:100%;aspect-ratio:1728/1080;--mr:220px}
-.hero .michi-fx::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:radial-gradient(ellipse 90% 80% at 50% 45%,rgba(8,6,4,.72) 0%,rgba(8,6,4,.5) 45%,rgba(8,6,4,.25) 100%)}
+.hero .michi-fx::after{content:none}
 .hero .michi-fx .mfx-img{object-fit:cover}
 .hero h1{font-size:clamp(2.4rem,6vw,4.4rem);margin:.18em 0 .3em;color:#fff;text-shadow:0 2px 30px rgba(0,0,0,.55)}
 .hero h1 .em{color:var(--gold-2);font-style:italic}
 .hero .lead{max-width:600px;margin:0 auto 1.7em;color:rgba(255,255,255,.9);font-size:clamp(1rem,2.2vw,1.18rem);text-shadow:0 1px 16px rgba(0,0,0,.5)}
-.hero-scroll{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);z-index:2;width:26px;height:42px;border:1.5px solid rgba(255,255,255,.5);border-radius:14px;display:block}
-.hero-scroll::before{content:"";position:absolute;left:50%;top:8px;width:3px;height:8px;border-radius:2px;background:rgba(255,255,255,.8);transform:translateX(-50%);animation:scrolldot 1.8s var(--ease) infinite}
-@keyframes scrolldot{0%{opacity:0;transform:translate(-50%,0)}40%{opacity:1}100%{opacity:0;transform:translate(-50%,14px)}}
 .hero-cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
 .hero .eyebrow{color:var(--gold)}
 .hero .btn-ghost{color:#fff;border-color:rgba(255,255,255,.6)}
+.hero .fx-tag{display:none}
 .hero .btn-ghost:hover{color:var(--gold);border-color:var(--gold)}
 
 /* 3D rotating carousel (based on user's spec, corrected CSS) */
